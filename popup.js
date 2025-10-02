@@ -101,7 +101,7 @@
       for (const task of tasks) {
         const buttons = document.querySelectorAll('button[aria-label="Add: Task"]');
         buttons.forEach(btn => btn.click());
-        await wait(2000 + 1000 * tasks.length);
+        await wait(2000 + 300 * tasks.length);
         enterTitles(task.name);
         selectActivity("Development");
         fillOriginEstimateAndRemainingWork(task.estimate);
